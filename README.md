@@ -2,6 +2,7 @@
 
 Crear archivo .env en la raíz del proyecto : 
 
+```
 PORT=3001
 APP_ENV = develop
 APP_PORT = 3000
@@ -12,15 +13,15 @@ DB_DATABASE = sohochallenge
 DB_USERNAME = root
 DB_PASSWORD = 1337
 NODE_ENV=development
+```
 
 -------------------------------------------
 
 
 # Crear base de datos local con nombre "sohochallenge"
-# ejecutar el siguiente script:
+# ejecutar el siguiente script
 
-!!
-
+```
 CREATE DATABASE IF NOT EXISTS sohochallenge;
 USE sohochallenge;
 
@@ -44,9 +45,7 @@ INSERT INTO `sohochallenge`.`projects` (`siteImageUrl`, `logoImageUrl`, `tituloP
 	VALUES ('https://i.ibb.co/NTRvxcH/proyecto2.png', 'https://i.ibb.co/7NSdrLk/proyecto2logo.png', 'Sitios web 2017','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet purus gravida quis blandit turpis cursus in. Pretium quam vulputate dignissim suspendisse in est ante in nibh. Ut morbi tincidunt augue interdum velit. Feugiat vivamus at augue eget arcu dictum varius duis at. Eget sit amet tellus cras adipiscing. Nisi quis eleifend quam adipiscing. Nisi porta lorem mollis aliquam ut porttitor leo a diam. Elementum integer enim neque volutpat ac tincidunt vitae. Etiam','responsive, ui, ux', 'rgb(201,44,58)');
 INSERT INTO `sohochallenge`.`projects` (`siteImageUrl`, `logoImageUrl`, `tituloProyecto`, `descripcion`, `tags`, `backgroundColor`)
 	VALUES ('https://i.ibb.co/m5pyJPG/proyecto3.png', 'https://i.ibb.co/KxGJL6k/proyecto3logo.png', 'TV App','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet purus gravida quis blandit turpis cursus in. Pretium quam vulputate dignissim suspendisse in est ante in nibh. Ut morbi tincidunt augue interdum velit. Feugiat vivamus at augue eget arcu dictum varius duis at. Eget sit amet tellus cras adipiscing. Nisi quis eleifend quam adipiscing. Nisi porta lorem mollis aliquam ut porttitor leo a diam. Elementum integer enim neque volutpat ac tincidunt vitae. Etiam','usabilidad,ui,ux,test con usuarios', 'rgb(255,255,255)');
-
-
-!!
+```
 
 
 Una vez realizado esto, 
