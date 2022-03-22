@@ -1,17 +1,21 @@
 import {Sequelize}  from 'sequelize'
+import dotenv from 'dotenv'
+dotenv.config();
+
+
 
 
 var projects = new Sequelize(
-  'sohochallenge',
-  'root',
-  '1337',
+  process.env.DB_DATABASE,
+  process.env.DB_USERNAME,
+  process.env.DB_PASSWORD,
   {
-    host: 'localhost',
-    port: '3306',
-    dialect: 'mysql',
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
+    dialect: process.env.DB_CONNECTION,
     define: {
-        timestamps: false
-    }
+      timestamps: false
+  }
   }
 );
 
